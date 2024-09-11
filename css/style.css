@@ -1,0 +1,211 @@
+@font-face {
+    font-family: "Graf";
+    src: url("../fonts/font/Bubblez Graffiti.ttf") format("truetype");
+    /* font-style: normal; */
+}
+@font-face {
+    font-family: "TT";
+    src: local("TT Lakes"),
+        url("../fonts/font/TTLakes-Medium.woff2") format("woof2"),
+        url("../fonts/font/TTLakes-Medium.ttf") format("truetype");
+}
+body {
+    width: 320px;
+    font-family: "tt";
+    border: #7E7E82 1px dashed;
+    height: 509px;
+    overflow: auto;
+    box-sizing: border-box;
+}
+/* .border {
+    border: 1px solid black;
+} */
+a {
+    text-decoration: none;
+}
+.nav__ul, .menu__ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    vertical-align: middle;
+    padding: 0 ;
+    justify-content: space-evenly;
+    margin-bottom: 0;
+    /* position: absolute; */
+    width: 320px;
+    height: 88px;
+    left: 0px;
+    top: 0px;
+    /* overflow: hidden; */
+
+}
+.nav__img {
+    background: #FF3E79;
+    width: 30px;
+    height: auto;
+    padding: 5px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 15px;
+    order: 0;
+}
+.nav__status {
+    margin-right: 0;
+    width: 30px; 
+    height: 30px;
+    order: -1;
+}
+.nav__phone, .nav__message, .nav__people, .nav__divider-first {
+    display: none;
+}
+.nav__logo {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.menu__ul:hover, .menu__ul:focus {
+    overflow: auto;
+}
+.menu__li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    vertical-align: bottom;
+    white-space: nowrap;
+    margin-right: 10px;
+    height: 40px;
+    padding: 0 15px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.20000000298023224px;
+    text-align: left;
+    margin-bottom: 0px;
+    
+}
+.menu__a {
+    color: #7E7E82;
+}
+.menu_active {
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
+    width: 240px;
+    background-color: white;
+}
+.main {
+    background: #F8F8F8;
+}
+.main__h1 {
+    border-left: 4px solid #41F6D7;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    font-family: "TT";
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: -0.6000000238418579px;
+    text-align: left;
+    padding-left: 20px;
+}
+.main__article {
+    width: 320px;
+    top: 240px;
+    opacity: 0px;
+}
+.article__div-for-text {
+    height: 110px;
+    overflow: hidden;
+}
+.article__text {
+    font-family: "TT";
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+    /* padding-bottom: 10px; */
+    padding-left: 15px;
+    padding-right: 15px;
+    /* padding-top: 0; */
+    /* margin-top: 3; */
+}
+.more__a {
+    margin-top: 0px;
+    padding-left: 15px;
+    padding-top: 15px;
+    margin-bottom: 20px;
+    color: black;
+}
+.a__span {
+    padding-left: 10px;
+}
+.aside__div {
+    margin: 15px 0;
+}
+.aside__img {
+    width: 320px;
+    height: 130px;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+.article__text:last-child {
+    display: none;
+}
+
+@media screen and (width>400px) and (width<850px) {
+
+    body {
+        width: 768px;
+        height: 414px;
+        margin-right: 50px;
+    }   
+    .nav__phone, .nav__message, .nav__people, .nav__divider-first {
+        display: flex;
+    }
+   /* .nav__divider-last {
+    order: -1;
+   } */
+   .nav__people {
+    order: 2;
+   }
+   /* .border {
+    border: #7E7E82 solid 1px;
+   } */
+   .nav__logo {
+    margin-right: 150px;
+    margin-left: 30px;
+   }
+   .main__h1{
+    margin: 0;
+   }
+   .nav__img {
+    margin: 0 20px;
+   }
+   .nav__ul {
+    align-items: center;
+   }
+   .menu__ul {
+    width: 100%;
+    margin-top: 0;
+    overflow: hidden;
+   }
+   .main__first-section {
+    display: grid;
+    grid-template-columns: 360px 360px;
+    align-items: center;
+    }
+   .article__div-for-text {
+    width: 312;
+    height: 140px;
+    overflow: hidden;
+    margin-top: 0;
+   }
+   .article__text:last-child {
+    display: inline-block;
+    }
+    .aside__img{
+        border-top-left-radius: 6px;
+        border-bottom-left-radius: 6px;
+    }
+    .article__text {
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+}
